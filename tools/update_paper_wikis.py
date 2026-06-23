@@ -62,8 +62,12 @@ def main():
             continue
         sec = section(r)
         existing = row.get("wiki_markdown") or ""
-        if MARK in existing:                      # replace existing section
-            existing = existing.split(MARK)[0].rstrip()
+        # Drop any prior replication section (this one, or the older playground-era heading) so we
+        # don't accumulate overlapping sections.
+        cut = min((existing.find(m) for m in (MARK, "## Executable replication on ConvexPi")
+                   if existing.find(m) != -1), default=-1)
+        if cut != -1:
+            existing = existing[:cut].rstrip()
         merged = (existing.rstrip() + "\n\n" + sec) if existing else sec
         print(f"[{name}] -> doi {r.paper_doi}  ({'dry' if args.dry_run else 'write'}, {len(merged)} chars)")
         if not args.dry_run:
