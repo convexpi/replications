@@ -19,7 +19,8 @@ dependencies = [
 [project.optional-dependencies]
 # Single-name (yfinance) replications and notebook generation.
 extras = ["yfinance>=0.2", "nbformat>=5"]
-dev = ["pytest>=7", "yfinance>=0.2", "nbformat>=5"]
+# dev/tooling also needs gdown (OSAP cross-validation download).
+dev = ["pytest>=7", "yfinance>=0.2", "nbformat>=5", "gdown>=5"]
 
 [project.urls]
 Homepage = "https://convexpi.ai"

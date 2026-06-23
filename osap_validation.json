@@ -1,0 +1,56 @@
+{
+  "cooper_gulen_schill_investment": {
+    "osap_acronym": "AssetGrowth",
+    "correlation": 0.376,
+    "n_months": 738,
+    "quality": "weak"
+  },
+  "debondt_thaler_long_term_reversal": {
+    "osap_acronym": "LRreversal",
+    "correlation": 0.67,
+    "n_months": 1138,
+    "quality": "partial"
+  },
+  "fama_french_hml": {
+    "osap_acronym": "BM",
+    "correlation": 0.554,
+    "n_months": 882,
+    "quality": "partial"
+  },
+  "fama_french_smb": {
+    "osap_acronym": "Size",
+    "correlation": 0.631,
+    "n_months": 1182,
+    "quality": "partial"
+  },
+  "jegadeesh_short_term_reversal": {
+    "osap_acronym": "STreversal",
+    "correlation": 0.443,
+    "n_months": 1187,
+    "quality": "partial"
+  },
+  "jegadeesh_titman_momentum": {
+    "osap_acronym": "Mom12m",
+    "correlation": 0.738,
+    "n_months": 1176,
+    "quality": "clear"
+  },
+  "moskowitz_grinblatt_industry_momentum": {
+    "osap_acronym": "IndMom",
+    "correlation": 0.451,
+    "n_months": 1181,
+    "quality": "partial"
+  },
+  "moskowitz_ooi_pedersen_trend": {
+    "osap_acronym": null,
+    "correlation": null,
+    "n_months": 0,
+    "quality": "unverified"
+  },
+  "novy_marx_profitability": {
+    "osap_acronym": "GP",
+    "correlation": 0.464,
+    "n_months": 738,
+    "quality": "partial"
+  }
+}

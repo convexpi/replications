@@ -18,7 +18,10 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": null,
-    "verdict": "dormant"
+    "verdict": "dormant",
+    "osap_acronym": "AssetGrowth",
+    "osap_correlation": 0.376,
+    "replication_quality": "weak"
   },
   {
     "name": "debondt_thaler_long_term_reversal",
@@ -39,7 +42,10 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": null,
-    "verdict": "dormant"
+    "verdict": "dormant",
+    "osap_acronym": "LRreversal",
+    "osap_correlation": 0.67,
+    "replication_quality": "partial"
   },
   {
     "name": "fama_french_hml",
@@ -60,7 +66,10 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": null,
-    "verdict": "decayed"
+    "verdict": "decayed",
+    "osap_acronym": "BM",
+    "osap_correlation": 0.554,
+    "replication_quality": "partial"
   },
   {
     "name": "fama_french_smb",
@@ -81,7 +90,10 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": null,
-    "verdict": "dormant"
+    "verdict": "dormant",
+    "osap_acronym": "Size",
+    "osap_correlation": 0.631,
+    "replication_quality": "partial"
   },
   {
     "name": "jegadeesh_short_term_reversal",
@@ -102,7 +114,10 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": "Extremely high turnover and heavily driven by microstructure (bid-ask bounce). The gross Sharpe shown is not achievable net of realistic transaction costs.",
-    "verdict": "decayed"
+    "verdict": "decayed",
+    "osap_acronym": "STreversal",
+    "osap_correlation": 0.443,
+    "replication_quality": "partial"
   },
   {
     "name": "jegadeesh_titman_momentum",
@@ -123,7 +138,10 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": null,
-    "verdict": "alive"
+    "verdict": "alive",
+    "osap_acronym": "Mom12m",
+    "osap_correlation": 0.738,
+    "replication_quality": "clear"
   },
   {
     "name": "moskowitz_grinblatt_industry_momentum",
@@ -144,7 +162,10 @@
     "turnover": 0.412,
     "net_oos_sharpe": 0.249,
     "caveat": null,
-    "verdict": "alive"
+    "verdict": "alive",
+    "osap_acronym": "IndMom",
+    "osap_correlation": 0.451,
+    "replication_quality": "partial"
   },
   {
     "name": "moskowitz_ooi_pedersen_trend",
@@ -165,7 +186,10 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": null,
-    "verdict": "alive"
+    "verdict": "alive",
+    "osap_acronym": null,
+    "osap_correlation": null,
+    "replication_quality": "unverified"
   },
   {
     "name": "novy_marx_profitability",
@@ -186,6 +210,9 @@
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": null,
-    "verdict": "decayed"
+    "verdict": "decayed",
+    "osap_acronym": "GP",
+    "osap_correlation": 0.464,
+    "replication_quality": "partial"
   }
 ]

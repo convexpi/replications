@@ -48,6 +48,16 @@ The leaderboard is re-run quarterly by CI and snapshotted to `history/leaderboar
 verdicts form a living time series. Some replications carry an honest `caveat` (e.g. short-term
 reversal's gross Sharpe is unachievable net of costs).
 
+## Cross-validation against OSAP
+Each replication is cross-checked against the [Open Source Asset Pricing](https://www.openassetpricing.com)
+(Chen & Zimmermann) gold-standard portfolio returns: `tools/validate_against_osap.py` correlates our
+free, Ken-French-built *factor* series with OSAP's *single-name decile* long-short returns. Because
+these are different constructions of the same anomaly, a genuine match lands around **0.4–0.8**, not
+~1.0 — so the leaderboard reports a `clear` / `partial` / `weak` fidelity tier alongside the
+correlation. This is an external check on top of the CI reference test; the result is committed to
+`osap_validation.json` so CI and the website never touch OSAP at runtime. OSAP data © Chen &
+Zimmermann, used under their open license.
+
 ## Contributing
 We want replications of as many canonical strategies as possible — and **multiple takes** on the
 same paper are welcome (replication is a choice; the disagreement is the lesson). Fork, add a module,
