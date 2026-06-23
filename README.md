@@ -29,7 +29,7 @@ series = r.build()         # the recomputed daily return series
 Run any replication on **live data** in Colab — see the badge in each `notebooks/<name>.ipynb`, or
 the *Open in Colab* link on the [playground](https://convexpi.ai/playground) and on each paper's wiki.
 
-## What's inside (the first six)
+## What's inside
 See [`BENCHMARK.md`](BENCHMARK.md) for the live leaderboard. Each row is recomputed and OOS-scored:
 
 | Strategy | Paper | Recomputed from |
@@ -40,6 +40,13 @@ See [`BENCHMARK.md`](BENCHMARK.md) for the live leaderboard. Each row is recompu
 | Profitability (RMW) | Novy-Marx 2013 | 6 size × operating-profitability portfolios |
 | Industry momentum | Moskowitz & Grinblatt 1999 | 12 industry portfolios (ranked & rebalanced) |
 | Trend (TSMOM) | Moskowitz, Ooi & Pedersen 2012 | market excess return |
+| Investment (CMA) | Cooper, Gulen & Schill 2008 | 6 size × investment portfolios |
+| Short-term reversal | Jegadeesh 1990 | 6 size × prior-1-month portfolios |
+| Long-term reversal | De Bondt & Thaler 1985 | 6 size × prior 13–60-month portfolios |
+
+The leaderboard is re-run quarterly by CI and snapshotted to `history/leaderboard.jsonl`, so the
+verdicts form a living time series. Some replications carry an honest `caveat` (e.g. short-term
+reversal's gross Sharpe is unachievable net of costs).
 
 ## Contributing
 We want replications of as many canonical strategies as possible — and **multiple takes** on the

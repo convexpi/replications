@@ -1,0 +1,31 @@
+name: Leaderboard
+on:
+  schedule:
+    - cron: "0 6 1 1,4,7,10 *"   # quarterly: 1st of Jan / Apr / Jul / Oct, 06:00 UTC
+  workflow_dispatch:
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12", cache: pip }
+      - name: Install
+        run: pip install -e ".[dev]"
+      - name: Refresh leaderboard + append snapshot
+        run: |
+          python tools/gen_benchmark.py
+          python tools/snapshot_leaderboard.py
+      - name: Commit if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add BENCHMARK.md results.json history/leaderboard.jsonl
+          if git diff --cached --quiet; then
+            echo "No leaderboard changes."
+          else
+            git commit -m "chore: refresh leaderboard $(date -u +%Y-%m-%d)"
+            git push
+          fi

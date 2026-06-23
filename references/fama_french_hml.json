@@ -16,6 +16,7 @@
   "sharpe_decay": 0.647,
   "turnover": null,
   "net_oos_sharpe": null,
+  "caveat": null,
   "verdict": "dormant",
   "as_of": "2024-12-31"
 }

@@ -1,0 +1,22 @@
+{
+  "name": "cooper_gulen_schill_investment",
+  "title": "Investment (CMA)",
+  "paper_title": "Asset Growth and the Cross-Section of Stock Returns",
+  "paper_doi": "10.1111/j.1540-6261.2008.01370.x",
+  "pub_year": 2008,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1963-07-01",
+  "end": "2024-12-31",
+  "in_sample_sharpe": 0.709,
+  "oos_sharpe": 0.049,
+  "recent_sharpe": -0.172,
+  "oos_max_drawdown": -0.269,
+  "sharpe_decay": 0.931,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": null,
+  "verdict": "dormant",
+  "as_of": "2024-12-31"
+}

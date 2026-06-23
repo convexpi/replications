@@ -1,0 +1,22 @@
+{
+  "name": "jegadeesh_short_term_reversal",
+  "title": "Short-term reversal",
+  "paper_title": "Evidence of Predictable Behavior of Security Returns",
+  "paper_doi": "10.1111/j.1540-6261.1990.tb05110.x",
+  "pub_year": 1990,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1926-01-26",
+  "end": "2024-12-31",
+  "in_sample_sharpe": 5.117,
+  "oos_sharpe": 1.321,
+  "recent_sharpe": 0.337,
+  "oos_max_drawdown": -0.357,
+  "sharpe_decay": 0.742,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": "Extremely high turnover and heavily driven by microstructure (bid-ask bounce). The gross Sharpe shown is not achievable net of realistic transaction costs.",
+  "verdict": "decayed",
+  "as_of": "2024-12-31"
+}

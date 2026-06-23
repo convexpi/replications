@@ -65,6 +65,7 @@ class Replication(ABC):
     data_sources: list[str] = field(default_factory=list)
     references: list[str] = field(default_factory=list)
     authors: list[str] = field(default_factory=lambda: ["ConvexPi"])
+    caveat: str = ""                       # honest health warning (e.g. cost/turnover/microstructure)
     recent_years: int = 10
     cost_bps: float = 10.0                 # per unit of one-way turnover, for the net-of-cost score
     rebalances_per_year: float = 12.0
@@ -130,6 +131,7 @@ class Replication(ABC):
             "sharpe_decay": decay,
             "turnover": turnover,
             "net_oos_sharpe": net_oos_sharpe,
+            "caveat": self.caveat or None,
             "verdict": _verdict(oos_s, sharpe(recent), decay),
         }
 

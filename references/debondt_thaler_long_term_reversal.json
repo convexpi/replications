@@ -1,0 +1,22 @@
+{
+  "name": "debondt_thaler_long_term_reversal",
+  "title": "Long-term reversal",
+  "paper_title": "Does the Stock Market Overreact?",
+  "paper_doi": "10.1111/j.1540-6261.1985.tb05004.x",
+  "pub_year": 1985,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1930-03-20",
+  "end": "2024-12-31",
+  "in_sample_sharpe": 0.205,
+  "oos_sharpe": 0.073,
+  "recent_sharpe": -0.309,
+  "oos_max_drawdown": -0.58,
+  "sharpe_decay": 0.643,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": null,
+  "verdict": "dormant",
+  "as_of": "2024-12-31"
+}

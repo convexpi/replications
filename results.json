@@ -1,5 +1,47 @@
 [
   {
+    "name": "cooper_gulen_schill_investment",
+    "title": "Investment (CMA)",
+    "paper_title": "Asset Growth and the Cross-Section of Stock Returns",
+    "paper_doi": "10.1111/j.1540-6261.2008.01370.x",
+    "pub_year": 2008,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "1963-07-01",
+    "end": "2026-04-30",
+    "in_sample_sharpe": 0.709,
+    "oos_sharpe": 0.032,
+    "recent_sharpe": -0.054,
+    "oos_max_drawdown": -0.287,
+    "sharpe_decay": 0.954,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": null,
+    "verdict": "dormant"
+  },
+  {
+    "name": "debondt_thaler_long_term_reversal",
+    "title": "Long-term reversal",
+    "paper_title": "Does the Stock Market Overreact?",
+    "paper_doi": "10.1111/j.1540-6261.1985.tb05004.x",
+    "pub_year": 1985,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "1930-03-20",
+    "end": "2026-04-30",
+    "in_sample_sharpe": 0.205,
+    "oos_sharpe": 0.069,
+    "recent_sharpe": -0.137,
+    "oos_max_drawdown": -0.58,
+    "sharpe_decay": 0.663,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": null,
+    "verdict": "dormant"
+  },
+  {
     "name": "fama_french_hml",
     "title": "Value (HML)",
     "paper_title": "Common Risk Factors in the Returns on Stocks and Bonds",
@@ -17,6 +59,7 @@
     "sharpe_decay": 0.581,
     "turnover": null,
     "net_oos_sharpe": null,
+    "caveat": null,
     "verdict": "decayed"
   },
   {
@@ -37,7 +80,29 @@
     "sharpe_decay": 1.077,
     "turnover": null,
     "net_oos_sharpe": null,
+    "caveat": null,
     "verdict": "dormant"
+  },
+  {
+    "name": "jegadeesh_short_term_reversal",
+    "title": "Short-term reversal",
+    "paper_title": "Evidence of Predictable Behavior of Security Returns",
+    "paper_doi": "10.1111/j.1540-6261.1990.tb05110.x",
+    "pub_year": 1990,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "1926-01-26",
+    "end": "2026-04-30",
+    "in_sample_sharpe": 5.117,
+    "oos_sharpe": 1.29,
+    "recent_sharpe": 0.406,
+    "oos_max_drawdown": -0.357,
+    "sharpe_decay": 0.748,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": "Extremely high turnover and heavily driven by microstructure (bid-ask bounce). The gross Sharpe shown is not achievable net of realistic transaction costs.",
+    "verdict": "decayed"
   },
   {
     "name": "jegadeesh_titman_momentum",
@@ -57,6 +122,7 @@
     "sharpe_decay": 0.404,
     "turnover": null,
     "net_oos_sharpe": null,
+    "caveat": null,
     "verdict": "alive"
   },
   {
@@ -77,6 +143,7 @@
     "sharpe_decay": 0.349,
     "turnover": 0.412,
     "net_oos_sharpe": 0.249,
+    "caveat": null,
     "verdict": "alive"
   },
   {
@@ -97,6 +164,7 @@
     "sharpe_decay": -1.865,
     "turnover": null,
     "net_oos_sharpe": null,
+    "caveat": null,
     "verdict": "alive"
   },
   {
@@ -117,6 +185,7 @@
     "sharpe_decay": 0.588,
     "turnover": null,
     "net_oos_sharpe": null,
+    "caveat": null,
     "verdict": "decayed"
   }
 ]

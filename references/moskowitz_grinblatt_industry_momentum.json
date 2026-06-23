@@ -16,6 +16,7 @@
   "sharpe_decay": 0.357,
   "turnover": 0.412,
   "net_oos_sharpe": 0.245,
+  "caveat": null,
   "verdict": "alive",
   "as_of": "2024-12-31"
 }
