@@ -1,0 +1,21 @@
+{
+  "name": "jegadeesh_titman_momentum",
+  "title": "Momentum (WML)",
+  "paper_title": "Returns to Buying Winners and Selling Losers",
+  "paper_doi": "10.1111/j.1540-6261.1993.tb04702.x",
+  "pub_year": 1993,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1926-11-03",
+  "end": "2024-12-31",
+  "in_sample_sharpe": 0.631,
+  "oos_sharpe": 0.344,
+  "recent_sharpe": 0.157,
+  "oos_max_drawdown": -0.633,
+  "sharpe_decay": 0.455,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "verdict": "alive",
+  "as_of": "2024-12-31"
+}

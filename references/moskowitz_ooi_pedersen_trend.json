@@ -1,0 +1,21 @@
+{
+  "name": "moskowitz_ooi_pedersen_trend",
+  "title": "Trend (time-series momentum)",
+  "paper_title": "Time Series Momentum",
+  "paper_doi": "10.1016/j.jfineco.2011.11.003",
+  "pub_year": 2012,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1927-08-01",
+  "end": "2024-12-31",
+  "in_sample_sharpe": 0.167,
+  "oos_sharpe": 0.449,
+  "recent_sharpe": 0.284,
+  "oos_max_drawdown": -0.439,
+  "sharpe_decay": -1.685,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "verdict": "alive",
+  "as_of": "2024-12-31"
+}

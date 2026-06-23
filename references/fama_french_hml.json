@@ -1,0 +1,21 @@
+{
+  "name": "fama_french_hml",
+  "title": "Value (HML)",
+  "paper_title": "Common Risk Factors in the Returns on Stocks and Bonds",
+  "paper_doi": "10.1016/0304-405x(93)90023-5",
+  "pub_year": 1993,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1926-07-01",
+  "end": "2024-12-31",
+  "in_sample_sharpe": 0.491,
+  "oos_sharpe": 0.173,
+  "recent_sharpe": -0.173,
+  "oos_max_drawdown": -0.563,
+  "sharpe_decay": 0.647,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "verdict": "dormant",
+  "as_of": "2024-12-31"
+}

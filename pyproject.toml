@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "convexpi-replications"
+version = "0.1.0"
+description = "Open, verified reference replications of canonical quantitative-finance strategies."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "ConvexPi" }]
+dependencies = [
+    "pandas>=1.5",
+    "numpy>=1.23",
+    "pandas-datareader>=0.10",
+]
+
+[project.optional-dependencies]
+# Single-name (yfinance) replications and notebook generation.
+extras = ["yfinance>=0.2", "nbformat>=5"]
+dev = ["pytest>=7", "yfinance>=0.2", "nbformat>=5"]
+
+[project.urls]
+Homepage = "https://convexpi.ai"
+Repository = "https://github.com/convexpi/replications"
+
+[tool.setuptools.packages.find]
+include = ["replications*"]

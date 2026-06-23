@@ -1,0 +1,21 @@
+{
+  "name": "moskowitz_grinblatt_industry_momentum",
+  "title": "Industry momentum",
+  "paper_title": "Do Industries Explain Momentum?",
+  "paper_doi": "10.1111/0022-1082.00146",
+  "pub_year": 1999,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1926-08-31",
+  "end": "2024-12-31",
+  "in_sample_sharpe": 0.474,
+  "oos_sharpe": 0.304,
+  "recent_sharpe": 0.178,
+  "oos_max_drawdown": -0.412,
+  "sharpe_decay": 0.357,
+  "turnover": 0.412,
+  "net_oos_sharpe": 0.245,
+  "verdict": "alive",
+  "as_of": "2024-12-31"
+}
