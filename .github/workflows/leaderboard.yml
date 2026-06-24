@@ -18,6 +18,18 @@ jobs:
         run: |
           python tools/gen_benchmark.py
           python tools/snapshot_leaderboard.py
+      - name: Sync paper-wiki replication sections
+        # Keeps each paper's "Reference replication" section in lockstep with the leaderboard.
+        # Skipped automatically if the Supabase secrets aren't configured.
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_KEY: ${{ secrets.SUPABASE_SERVICE_KEY }}
+        run: |
+          if [ -n "$SUPABASE_URL" ] && [ -n "$SUPABASE_SERVICE_KEY" ]; then
+            python tools/update_paper_wikis.py
+          else
+            echo "Supabase secrets not set — skipping paper-wiki sync."
+          fi
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
