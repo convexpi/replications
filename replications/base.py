@@ -66,6 +66,7 @@ class Replication(ABC):
     references: list[str] = field(default_factory=list)
     authors: list[str] = field(default_factory=lambda: ["ConvexPi"])
     caveat: str = ""                       # honest health warning (e.g. cost/turnover/microstructure)
+    online: bool = False                   # build() pulls live data (e.g. yfinance) — no pinned CI reference
     recent_years: int = 10
     cost_bps: float = 10.0                 # per unit of one-way turnover, for the net-of-cost score
     rebalances_per_year: float = 12.0
@@ -132,6 +133,7 @@ class Replication(ABC):
             "turnover": turnover,
             "net_oos_sharpe": net_oos_sharpe,
             "caveat": self.caveat or None,
+            "online": self.online,
             "verdict": _verdict(oos_s, sharpe(recent), decay),
         }
 

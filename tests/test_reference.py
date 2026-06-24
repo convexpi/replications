@@ -3,7 +3,8 @@ from replications import all_replications
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 REF = os.path.join(ROOT, "references")
-REPS = all_replications()
+# Online (live-data) replications drift with the data, so they carry no committed reference.
+REPS = {k: v for k, v in all_replications().items() if not v.online}
 TOL = 0.04   # Sharpe tolerance vs the committed reference (source data is percent-rounded)
 
 @pytest.mark.parametrize("name", list(REPS))

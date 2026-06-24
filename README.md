@@ -39,14 +39,17 @@ See [`BENCHMARK.md`](BENCHMARK.md) for the live leaderboard. Each row is recompu
 | Momentum (WML) | Jegadeesh & Titman 1993 | 6 size × prior-return portfolios |
 | Profitability (RMW) | Novy-Marx 2013 | 6 size × operating-profitability portfolios |
 | Industry momentum | Moskowitz & Grinblatt 1999 | 12 industry portfolios (ranked & rebalanced) |
-| Trend (TSMOM) | Moskowitz, Ooi & Pedersen 2012 | market excess return |
+| Trend (TSMOM) | Moskowitz, Ooi & Pedersen 2012 | a cross-asset futures universe (yfinance, live data) |
 | Investment (CMA) | Cooper, Gulen & Schill 2008 | 6 size × investment portfolios |
 | Short-term reversal | Jegadeesh 1990 | 6 size × prior-1-month portfolios |
 | Long-term reversal | De Bondt & Thaler 1985 | 6 size × prior 13–60-month portfolios |
 
 The leaderboard is re-run quarterly by CI and snapshotted to `history/leaderboard.jsonl`, so the
 verdicts form a living time series. Some replications carry an honest `caveat` (e.g. short-term
-reversal's gross Sharpe is unachievable net of costs).
+reversal's gross Sharpe is unachievable net of costs). Most replications recompute from free,
+offline Ken-French building blocks; a few are **live-data** (`online=True`) — e.g. trend (TSMOM)
+pulls a cross-asset futures universe from Yahoo Finance — and run in their Colab notebook rather
+than against a pinned CI reference.
 
 ## Cross-validation against OSAP
 Each replication is cross-checked against the [Open Source Asset Pricing](https://www.openassetpricing.com)

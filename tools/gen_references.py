@@ -11,6 +11,9 @@ OUT = os.path.join(ROOT, "references")
 def main():
     os.makedirs(OUT, exist_ok=True)
     for name, r in all_replications().items():
+        if r.online:
+            print(f"skip {name} (online / live data — no pinned reference)")
+            continue
         rc = r.report_card(as_of=AS_OF)
         rc["as_of"] = AS_OF
         with open(os.path.join(OUT, f"{name}.json"), "w") as f:

@@ -20,7 +20,8 @@ def main():
             f"Replication of **{r.paper_title}** ({r.pub_year}). It recomputes the strategy from its "
             f"building blocks and runs the out-of-sample (McLean & Pontiff) test on live data.\n\n"
             f"Source: [`replications/catalog/{module}.py`]({REPO}/blob/main/replications/catalog/{module}.py)"))
-        c.append(nbf.v4.new_code_cell(f"!pip -q install git+{REPO}.git"))
+        # [extras] pulls yfinance so live-data (online) replications run in Colab.
+        c.append(nbf.v4.new_code_cell(f'!pip -q install "convexpi-replications[extras] @ git+{REPO}.git"'))
         c.append(nbf.v4.new_code_cell(
             "import pandas as pd, numpy as np, matplotlib.pyplot as plt\n"
             "from replications import all_replications\n"

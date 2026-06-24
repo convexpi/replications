@@ -15,9 +15,10 @@ Regenerate with `python tools/gen_benchmark.py`. Verdicts are honest, not editor
 | Short-term reversal [^1] | Evidence of Predictable Behavior of Security Returns | 1990 | 5.12 | 1.29 | 75% | decayed | partial (+0.44) |
 | Momentum (WML) | Returns to Buying Winners and Selling Losers | 1993 | 0.63 | 0.38 | 40% | alive | clear (+0.74) |
 | Industry momentum | Do Industries Explain Momentum? | 1999 | 0.47 | 0.31 | 35% | alive | partial (+0.45) |
-| Trend (time-series momentum) | Time Series Momentum | 2012 | 0.17 | 0.48 | improved | alive | — |
+| Trend (time-series momentum) [^2] | Time Series Momentum | 2012 | 0.34 | 0.42 | improved | alive | — |
 | Profitability (RMW) | The Other Side of Value | 2013 | 0.58 | 0.24 | 59% | decayed | partial (+0.46) |
 
 [^1]: **Short-term reversal** — Extremely high turnover and heavily driven by microstructure (bid-ask bounce). The gross Sharpe shown is not achievable net of realistic transaction costs.
+[^2]: **Trend (time-series momentum)** — Uses Yahoo Finance continuous front-month futures, which begin ~2000 (vs the paper's 1985) and carry roll artifacts — a faithful but data-limited proxy for the paper's 58-instrument universe.
 
 *Open replications maintained at [https://github.com/convexpi/replications](https://github.com/convexpi/replications) — fork, improve, and PR.*
