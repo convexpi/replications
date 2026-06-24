@@ -17,6 +17,7 @@
   "turnover": 0.412,
   "net_oos_sharpe": 0.245,
   "caveat": null,
+  "online": false,
   "verdict": "alive",
   "as_of": "2024-12-31"
 }

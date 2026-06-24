@@ -1,0 +1,23 @@
+{
+  "name": "ang_idiosyncratic_volatility",
+  "title": "Idiosyncratic volatility puzzle",
+  "paper_title": "The Cross-Section of Volatility and Expected Returns",
+  "paper_doi": "10.1111/j.1540-6261.2006.00836.x",
+  "pub_year": 2006,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1963-07-01",
+  "end": "2024-12-01",
+  "in_sample_sharpe": 0.157,
+  "oos_sharpe": 0.084,
+  "recent_sharpe": 0.076,
+  "oos_max_drawdown": -0.653,
+  "sharpe_decay": 0.463,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": "Univariate residual-variance sort (value-weighted quintiles). The puzzle is stronger with equal weighting and among small, illiquid names; this is the value-weighted spread, gross of transaction costs.",
+  "online": false,
+  "verdict": "weak",
+  "as_of": "2024-12-31"
+}

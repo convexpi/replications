@@ -1,0 +1,23 @@
+{
+  "name": "frazzini_pedersen_bab",
+  "title": "Betting against beta",
+  "paper_title": "Betting Against Beta",
+  "paper_doi": "10.1016/j.jfineco.2013.10.005",
+  "pub_year": 2014,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1966-07-01",
+  "end": "2024-12-01",
+  "in_sample_sharpe": 0.284,
+  "oos_sharpe": -0.024,
+  "recent_sharpe": -0.024,
+  "oos_max_drawdown": -0.583,
+  "sharpe_decay": 1.083,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": "Beta-rescaling uses a simple rolling 60-month market beta of each leg, not the paper's exact (1-year vol x 5-year correlation) estimator, and rescales the two quintile legs rather than every security. Gross of the (high) financing and turnover costs that leverage entails.",
+  "online": false,
+  "verdict": "dormant",
+  "as_of": "2024-12-31"
+}

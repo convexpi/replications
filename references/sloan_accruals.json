@@ -1,0 +1,23 @@
+{
+  "name": "sloan_accruals",
+  "title": "Accruals anomaly",
+  "paper_title": "Do Stock Prices Fully Reflect Information in Accruals and Cash Flows about Future Earnings?",
+  "paper_doi": "10.2307/248290",
+  "pub_year": 1996,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1963-07-01",
+  "end": "2024-12-01",
+  "in_sample_sharpe": 0.627,
+  "oos_sharpe": 0.223,
+  "recent_sharpe": 0.353,
+  "oos_max_drawdown": -0.269,
+  "sharpe_decay": 0.645,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": "Univariate accruals sort (value-weighted quintiles), available from 1963. The anomaly is concentrated in small, hard-to-arbitrage names and has weakened since publication; gross of transaction costs.",
+  "online": false,
+  "verdict": "decayed",
+  "as_of": "2024-12-31"
+}

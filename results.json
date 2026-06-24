@@ -1,5 +1,55 @@
 [
   {
+    "name": "ang_idiosyncratic_volatility",
+    "title": "Idiosyncratic volatility puzzle",
+    "paper_title": "The Cross-Section of Volatility and Expected Returns",
+    "paper_doi": "10.1111/j.1540-6261.2006.00836.x",
+    "pub_year": 2006,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "1963-07-01",
+    "end": "2026-04-01",
+    "in_sample_sharpe": 0.157,
+    "oos_sharpe": 0.014,
+    "recent_sharpe": -0.132,
+    "oos_max_drawdown": -0.691,
+    "sharpe_decay": 0.91,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": "Univariate residual-variance sort (value-weighted quintiles). The puzzle is stronger with equal weighting and among small, illiquid names; this is the value-weighted spread, gross of transaction costs.",
+    "online": false,
+    "verdict": "dormant",
+    "osap_acronym": null,
+    "osap_correlation": null,
+    "replication_quality": "unverified"
+  },
+  {
+    "name": "bali_cakici_whitelaw_max",
+    "title": "MAX effect (lottery stocks)",
+    "paper_title": "Maxing Out: Stocks as Lotteries and the Cross-Section of Expected Returns",
+    "paper_doi": "10.1016/j.jfineco.2010.08.014",
+    "pub_year": 2011,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "2000-02-29",
+    "end": "2026-06-30",
+    "in_sample_sharpe": -0.086,
+    "oos_sharpe": -0.324,
+    "recent_sharpe": -0.476,
+    "oos_max_drawdown": -0.712,
+    "sharpe_decay": null,
+    "turnover": 1.161,
+    "net_oos_sharpe": -0.506,
+    "caveat": "Uses a fixed basket of surviving Yahoo Finance large caps (history since ~2000), not the paper's full CRSP universe, so it is survivorship-biased and understates the effect, which is strongest in small, illiquid names. A faithful-but-limited proxy; gross of transaction costs.",
+    "online": true,
+    "verdict": "dormant",
+    "osap_acronym": null,
+    "osap_correlation": null,
+    "replication_quality": "unverified"
+  },
+  {
     "name": "cooper_gulen_schill_investment",
     "title": "Investment (CMA)",
     "paper_title": "Asset Growth and the Cross-Section of Stock Returns",
@@ -100,6 +150,31 @@
     "replication_quality": "partial"
   },
   {
+    "name": "frazzini_pedersen_bab",
+    "title": "Betting against beta",
+    "paper_title": "Betting Against Beta",
+    "paper_doi": "10.1016/j.jfineco.2013.10.005",
+    "pub_year": 2014,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "1966-07-01",
+    "end": "2026-04-01",
+    "in_sample_sharpe": 0.284,
+    "oos_sharpe": 0.036,
+    "recent_sharpe": -0.18,
+    "oos_max_drawdown": -0.619,
+    "sharpe_decay": 0.874,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": "Beta-rescaling uses a simple rolling 60-month market beta of each leg, not the paper's exact (1-year vol x 5-year correlation) estimator, and rescales the two quintile legs rather than every security. Gross of the (high) financing and turnover costs that leverage entails.",
+    "online": false,
+    "verdict": "dormant",
+    "osap_acronym": null,
+    "osap_correlation": null,
+    "replication_quality": "unverified"
+  },
+  {
     "name": "jegadeesh_short_term_reversal",
     "title": "Short-term reversal",
     "paper_title": "Evidence of Predictable Behavior of Security Returns",
@@ -185,11 +260,11 @@
     ],
     "start": "2006-01-31",
     "end": "2026-06-24",
-    "in_sample_sharpe": 0.085,
-    "oos_sharpe": 0.408,
-    "recent_sharpe": 0.39,
+    "in_sample_sharpe": 0.338,
+    "oos_sharpe": 0.42,
+    "recent_sharpe": 0.4,
     "oos_max_drawdown": -0.335,
-    "sharpe_decay": -3.792,
+    "sharpe_decay": -0.24,
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": "Uses Yahoo Finance continuous front-month futures, which begin ~2000 (vs the paper's 1985) and carry roll artifacts \u2014 a faithful but data-limited proxy for the paper's 58-instrument universe.",
@@ -223,5 +298,30 @@
     "osap_acronym": "GP",
     "osap_correlation": 0.464,
     "replication_quality": "partial"
+  },
+  {
+    "name": "sloan_accruals",
+    "title": "Accruals anomaly",
+    "paper_title": "Do Stock Prices Fully Reflect Information in Accruals and Cash Flows about Future Earnings?",
+    "paper_doi": "10.2307/248290",
+    "pub_year": 1996,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "1963-07-01",
+    "end": "2026-04-01",
+    "in_sample_sharpe": 0.627,
+    "oos_sharpe": 0.233,
+    "recent_sharpe": 0.27,
+    "oos_max_drawdown": -0.269,
+    "sharpe_decay": 0.628,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": "Univariate accruals sort (value-weighted quintiles), available from 1963. The anomaly is concentrated in small, hard-to-arbitrage names and has weakened since publication; gross of transaction costs.",
+    "online": false,
+    "verdict": "decayed",
+    "osap_acronym": null,
+    "osap_correlation": null,
+    "replication_quality": "unverified"
   }
 ]

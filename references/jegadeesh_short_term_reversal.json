@@ -17,6 +17,7 @@
   "turnover": null,
   "net_oos_sharpe": null,
   "caveat": "Extremely high turnover and heavily driven by microstructure (bid-ask bounce). The gross Sharpe shown is not achievable net of realistic transaction costs.",
+  "online": false,
   "verdict": "decayed",
   "as_of": "2024-12-31"
 }

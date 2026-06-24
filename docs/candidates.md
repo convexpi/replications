@@ -32,23 +32,28 @@ yet (e.g. point-in-time fundamentals) · `technique` a method demo, not a single
 | Size (SMB) | Fama & French (1993) | 10.1016/0304-405X(93)90023-5 | `done` | kenfrench |
 | Profitability | Novy-Marx (2013) | 10.1016/j.jfineco.2013.01.003 | `done` | kenfrench |
 | Investment / asset growth | Cooper, Gulen & Schill (2008) | 10.1111/j.1540-6261.2008.01370.x | `done` | kenfrench |
-| **MAX effect (lottery stocks)** | **Bali, Cakici & Whitelaw (2011)** | **10.1016/j.jfineco.2010.08.014** | **`next` → shipping** | yfinance |
-| Betting against beta | Frazzini & Pedersen (2014) | 10.1016/j.jfineco.2013.10.005 | `next` | yfinance (per-name beta) |
-| Idiosyncratic volatility | Ang, Hodrick, Xing & Zhang (2006) | 10.1111/j.1540-6261.2006.00836.x | `next` | yfinance |
+| MAX effect (lottery stocks) | Bali, Cakici & Whitelaw (2011) | 10.1016/j.jfineco.2010.08.014 | `done` | yfinance |
+| Betting against beta | Frazzini & Pedersen (2014) | 10.1016/j.jfineco.2013.10.005 | `done` | kenfrench (BETA sort) |
+| Idiosyncratic volatility | Ang, Hodrick, Xing & Zhang (2006) | 10.1111/j.1540-6261.2006.00836.x | `done` | kenfrench (RESVAR sort) |
+| Accruals | Sloan (1996) | 10.2307/248290 | `done` | kenfrench (AC sort) |
 | Pairs trading (distance) | Gatev, Goetzmann & Rouwenhorst (2006) | 10.1093/rfs/hhj020 | `next` | yfinance |
 | Asset-class momentum | Asness, Moskowitz & Pedersen (2013) | 10.1111/jofi.12021 | `next` | yfinance ETFs |
-| Accruals | Sloan (1996) | (JSTOR 248290) | `needs-data` | fundamentals |
+| Net stock issuance | Pontiff & Woodgate (2008) | 10.1111/j.1540-6261.2008.01362.x | `next` | kenfrench (NI sort) |
 | Piotroski F-score | Piotroski (2000) | 10.2307/2672906 | `needs-data` | fundamentals |
 | Mohanram G-score | Mohanram (2005) | 10.1007/s11142-005-1535-3 | `needs-data` | fundamentals |
 | ML return forecasting (NB/GBM/CNN) | — | — | `technique` | — |
 
 ## Notes
 
-- **Priority** is the `next` rows that run on data we already have: MAX, idiosyncratic vol, asset-class
-  momentum, and distance pairs all work on `yfinance` single names/ETFs (a faithful-but-survivorship-
-  limited proxy, flagged in each replication's `caveat`), exactly like the trend replication.
-- **Fundamentals-dependent** strategies (accruals, F/G-score) are blocked until we add a free
-  point-in-time fundamentals loader to `data.py`; sketched, not started.
+- **Prefer Ken-French univariate sorts** (`Portfolios_Formed_on_*`) over yfinance baskets where they
+  exist: they cover the full CRSP universe (incl. small stocks), are survivorship-bias-free, and —
+  being offline — earn a pinned reference + CI check. Idio-vol (RESVAR), accruals (AC) and beta (BETA)
+  all use these. This also unblocked **accruals** without a fundamentals loader.
+- **yfinance** single-name/ETF replications (MAX, future pairs/asset-class momentum) are the right tool
+  only when no Ken-French building block exists; they are survivorship-limited large-cap proxies,
+  flagged in each `caveat`, exactly like the trend replication.
+- **Still fundamentals-blocked:** F-score / G-score (no Ken-French sort) await a free point-in-time
+  fundamentals loader in `data.py`; sketched, not started.
 - The QuantConnect article that prompted this index — "The MAX Effect with VIX-based Leverage
   Scaling" — cites **Bali, Cakici & Whitelaw (2011)**; we replicate that primary paper's plain MAX
   effect (their VIX leverage overlay is a platform-specific extension we don't copy).
