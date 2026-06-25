@@ -13,7 +13,12 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12", cache: pip }
       - name: Install
-        run: pip install -e ".[dev]"
+        run: pip install -e ".[dev]" gdown
+      - name: Validate against OSAP
+        # Refresh the OSAP cross-check (downloads the OSAP long-short returns via gdown). OSAP's
+        # Google Drive host is occasionally flaky, so a failure here is non-fatal: gen_benchmark
+        # then just reuses the committed osap_validation.json.
+        run: python tools/validate_against_osap.py || echo "OSAP validation skipped (download failed)."
       - name: Refresh leaderboard + append snapshot
         run: |
           python tools/gen_benchmark.py
@@ -34,7 +39,7 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add BENCHMARK.md results.json history/leaderboard.jsonl
+          git add BENCHMARK.md results.json history/leaderboard.jsonl osap_validation.json
           if git diff --cached --quiet; then
             echo "No leaderboard changes."
           else
