@@ -20,7 +20,7 @@ Regenerate with `python tools/gen_benchmark.py`. Verdicts are honest, not editor
 | Momentum (WML) | Returns to Buying Winners and Selling Losers | 1993 | 0.63 | 0.38 | 40% | alive | clear (0.74) |
 | Cash-flow yield (value) [^6] | Contrarian Investment, Extrapolation, and Risk | 1994 | 0.58 | -0.06 | 110% | dormant | weak (0.34) |
 | Industry momentum | Do Industries Explain Momentum? | 1999 | 0.47 | 0.31 | 35% | alive | partial (0.45) |
-| Trend (time-series momentum) [^7] | Time Series Momentum | 2012 | 0.34 | 0.42 | improved | alive | — |
+| Trend (time-series momentum) [^7] | Time Series Momentum | 2012 | 0.09 | 0.41 | improved | alive | — |
 | Profitability (RMW) | The Other Side of Value | 2013 | 0.58 | 0.24 | 59% | decayed | partial (0.46) |
 | Net share issuance [^8] | Share Issuance and Cross-Sectional Returns | 2008 | 0.45 | 0.03 | 94% | decayed | partial (0.53) |
 | Accruals anomaly [^9] | Do Stock Prices Fully Reflect Information in Accruals and Cash Flows about Future Earnings? | 1996 | 0.63 | 0.23 | 63% | decayed | weak (0.30) |
