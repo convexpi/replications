@@ -36,8 +36,8 @@ yet (e.g. point-in-time fundamentals) · `technique` a method demo, not a single
 | Betting against beta | Frazzini & Pedersen (2014) | 10.1016/j.jfineco.2013.10.005 | `done` | kenfrench (BETA sort) |
 | Idiosyncratic volatility | Ang, Hodrick, Xing & Zhang (2006) | 10.1111/j.1540-6261.2006.00836.x | `done` | kenfrench (RESVAR sort) |
 | Accruals | Sloan (1996) | 10.2307/248290 | `done` | kenfrench (AC sort) |
-| Pairs trading (distance) | Gatev, Goetzmann & Rouwenhorst (2006) | 10.1093/rfs/hhj020 | `next` | yfinance |
-| Asset-class momentum | Asness, Moskowitz & Pedersen (2013) | 10.1111/jofi.12021 | `next` | yfinance ETFs |
+| Pairs trading (distance) | Gatev, Goetzmann & Rouwenhorst (2006) | 10.1093/rfs/hhj020 | `done` | yfinance |
+| Asset-class momentum | Asness, Moskowitz & Pedersen (2013) | 10.1111/jofi.12021 | `done` | yfinance ETFs |
 | Net stock issuance | Pontiff & Woodgate (2008) | 10.1111/j.1540-6261.2008.01362.x | `done` | kenfrench (NI sort) |
 | Earnings yield (P/E) | Basu (1977) | 10.1111/j.1540-6261.1977.tb01979.x | `done` | kenfrench (E-P sort) |
 | Cash-flow yield (value) | Lakonishok, Shleifer & Vishny (1994) | 10.1111/j.1540-6261.1994.tb04772.x | `done` | kenfrench (CF-P sort) |

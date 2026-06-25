@@ -43,6 +43,8 @@ OSAP_MAP = {
     "basu_earnings_yield":                   "EP",
     "lakonishok_cashflow_yield":             "CF",
     "bali_cakici_whitelaw_max":              None,   # online large-cap proxy, not a CRSP sort
+    "gatev_pairs_trading":                   None,   # relative-value, not a characteristic sort
+    "asness_moskowitz_pedersen_asset_momentum": None,  # cross-asset, not a single-name sort
 }
 
 

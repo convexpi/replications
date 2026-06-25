@@ -25,6 +25,31 @@
     "replication_quality": "clear"
   },
   {
+    "name": "asness_moskowitz_pedersen_asset_momentum",
+    "title": "Asset-class momentum",
+    "paper_title": "Value and Momentum Everywhere",
+    "paper_doi": "10.1111/jofi.12021",
+    "pub_year": 2013,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "2005-01-31",
+    "end": "2026-06-30",
+    "in_sample_sharpe": 0.275,
+    "oos_sharpe": 0.55,
+    "recent_sharpe": 0.255,
+    "oos_max_drawdown": -0.181,
+    "sharpe_decay": -1.003,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": "Cross-sectional 12-1 momentum across a fixed ETF basket (histories begin mid-2000s, so the sample is short), a practical proxy for the paper's broad cross-asset universe; gross of transaction costs.",
+    "online": true,
+    "verdict": "alive",
+    "osap_acronym": null,
+    "osap_correlation": null,
+    "replication_quality": "unverified"
+  },
+  {
     "name": "bali_cakici_whitelaw_max",
     "title": "MAX effect (lottery stocks)",
     "paper_title": "Maxing Out: Stocks as Lotteries and the Cross-Section of Expected Returns",
@@ -200,6 +225,31 @@
     "replication_quality": "partial"
   },
   {
+    "name": "gatev_pairs_trading",
+    "title": "Pairs trading (distance)",
+    "paper_title": "Pairs Trading: Performance of a Relative-Value Arbitrage Rule",
+    "paper_doi": "10.1093/rfs/hhj020",
+    "pub_year": 2006,
+    "authors": [
+      "ConvexPi"
+    ],
+    "start": "2001-01-03",
+    "end": "2026-06-24",
+    "in_sample_sharpe": -0.046,
+    "oos_sharpe": 0.063,
+    "recent_sharpe": -0.114,
+    "oos_max_drawdown": -0.221,
+    "sharpe_decay": null,
+    "turnover": null,
+    "net_oos_sharpe": null,
+    "caveat": "Distance method on a fixed large-cap Yahoo basket (history since ~2000), not the paper's full CRSP universe, so it is survivorship-biased and understates an effect that lives in smaller names; equal-weight long/short per pair, gross of the high transaction costs pairs trading incurs.",
+    "online": true,
+    "verdict": "dormant",
+    "osap_acronym": null,
+    "osap_correlation": null,
+    "replication_quality": "unverified"
+  },
+  {
     "name": "jegadeesh_short_term_reversal",
     "title": "Short-term reversal",
     "paper_title": "Evidence of Predictable Behavior of Security Returns",
@@ -309,12 +359,12 @@
       "ConvexPi"
     ],
     "start": "2006-01-31",
-    "end": "2026-06-24",
-    "in_sample_sharpe": 0.085,
-    "oos_sharpe": 0.405,
-    "recent_sharpe": 0.385,
+    "end": "2026-06-25",
+    "in_sample_sharpe": 0.338,
+    "oos_sharpe": 0.417,
+    "recent_sharpe": 0.397,
     "oos_max_drawdown": -0.335,
-    "sharpe_decay": -3.751,
+    "sharpe_decay": -0.232,
     "turnover": null,
     "net_oos_sharpe": null,
     "caveat": "Uses Yahoo Finance continuous front-month futures, which begin ~2000 (vs the paper's 1985) and carry roll artifacts \u2014 a faithful but data-limited proxy for the paper's 58-instrument universe.",
