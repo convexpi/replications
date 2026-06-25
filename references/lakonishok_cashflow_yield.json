@@ -1,0 +1,23 @@
+{
+  "name": "lakonishok_cashflow_yield",
+  "title": "Cash-flow yield (value)",
+  "paper_title": "Contrarian Investment, Extrapolation, and Risk",
+  "paper_doi": "10.1111/j.1540-6261.1994.tb04772.x",
+  "pub_year": 1994,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1951-07-01",
+  "end": "2024-12-01",
+  "in_sample_sharpe": 0.58,
+  "oos_sharpe": -0.099,
+  "recent_sharpe": -0.599,
+  "oos_max_drawdown": -0.719,
+  "sharpe_decay": 1.17,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": "Univariate cash-flow-to-price sort (value-weighted quintiles); firms with negative cash flow are excluded. Highly correlated with book-to-market and earnings-yield value; gross of transaction costs.",
+  "online": false,
+  "verdict": "dormant",
+  "as_of": "2024-12-31"
+}

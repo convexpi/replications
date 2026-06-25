@@ -36,8 +36,12 @@ OSAP_MAP = {
     "moskowitz_ooi_pedersen_trend":          None,   # time-series, not a cross-sectional sort
     "ang_idiosyncratic_volatility":          "IdioVol3F",
     "sloan_accruals":                        "Accruals",
-    "frazzini_pedersen_bab":                 "BetaFP",
+    "frazzini_pedersen_bab":                 "BetaFP",   # OSAP signs this as an ascending-beta sort,
+                                                         # opposite our economic BAB direction -> the
+                                                         # correlation is negative but |corr| is the match.
     "pontiff_woodgate_issuance":             "ShareIss1Y",
+    "basu_earnings_yield":                   "EP",
+    "lakonishok_cashflow_yield":             "CF",
     "bali_cakici_whitelaw_max":              None,   # online large-cap proxy, not a CRSP sort
 }
 

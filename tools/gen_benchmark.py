@@ -36,7 +36,10 @@ def main():
         d = r["sharpe_decay"]
         dec = "—" if d is None else ("improved" if d < 0 else f"{d:.0%}")
         corr, qual = r.get("osap_correlation"), r.get("replication_quality")
-        osap = "—" if corr is None else f"{qual} ({corr:+.2f})"
+        # Display the *magnitude* of agreement: OSAP signs some predictors by their raw signal
+        # (e.g. BetaFP is an ascending-beta sort), opposite to our economic-return orientation, so a
+        # negative correlation is a sign convention, not a worse match. Tier is already abs-based.
+        osap = "—" if corr is None else f"{qual} ({abs(corr):.2f})"
         mark = ""
         if r.get("caveat"):
             mark = f" [^{len(caveats) + 1}]"

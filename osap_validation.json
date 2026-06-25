@@ -11,6 +11,12 @@
     "n_months": 0,
     "quality": "unverified"
   },
+  "basu_earnings_yield": {
+    "osap_acronym": "EP",
+    "correlation": 0.678,
+    "n_months": 882,
+    "quality": "partial"
+  },
   "cooper_gulen_schill_investment": {
     "osap_acronym": "AssetGrowth",
     "correlation": 0.376,
@@ -52,6 +58,12 @@
     "correlation": 0.738,
     "n_months": 1176,
     "quality": "clear"
+  },
+  "lakonishok_cashflow_yield": {
+    "osap_acronym": "CF",
+    "correlation": 0.339,
+    "n_months": 882,
+    "quality": "weak"
   },
   "moskowitz_grinblatt_industry_momentum": {
     "osap_acronym": "IndMom",

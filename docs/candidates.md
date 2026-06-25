@@ -39,6 +39,8 @@ yet (e.g. point-in-time fundamentals) · `technique` a method demo, not a single
 | Pairs trading (distance) | Gatev, Goetzmann & Rouwenhorst (2006) | 10.1093/rfs/hhj020 | `next` | yfinance |
 | Asset-class momentum | Asness, Moskowitz & Pedersen (2013) | 10.1111/jofi.12021 | `next` | yfinance ETFs |
 | Net stock issuance | Pontiff & Woodgate (2008) | 10.1111/j.1540-6261.2008.01362.x | `done` | kenfrench (NI sort) |
+| Earnings yield (P/E) | Basu (1977) | 10.1111/j.1540-6261.1977.tb01979.x | `done` | kenfrench (E-P sort) |
+| Cash-flow yield (value) | Lakonishok, Shleifer & Vishny (1994) | 10.1111/j.1540-6261.1994.tb04772.x | `done` | kenfrench (CF-P sort) |
 | Piotroski F-score | Piotroski (2000) | 10.2307/2672906 | `needs-data` | fundamentals |
 | Mohanram G-score | Mohanram (2005) | 10.1007/s11142-005-1535-3 | `needs-data` | fundamentals |
 | ML return forecasting (NB/GBM/CNN) | — | — | `technique` | — |
