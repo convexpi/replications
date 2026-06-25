@@ -34,6 +34,11 @@ OSAP_MAP = {
     "debondt_thaler_long_term_reversal":     "LRreversal",
     "moskowitz_grinblatt_industry_momentum": "IndMom",
     "moskowitz_ooi_pedersen_trend":          None,   # time-series, not a cross-sectional sort
+    "ang_idiosyncratic_volatility":          "IdioVol3F",
+    "sloan_accruals":                        "Accruals",
+    "frazzini_pedersen_bab":                 "BetaFP",
+    "pontiff_woodgate_issuance":             "ShareIss1Y",
+    "bali_cakici_whitelaw_max":              None,   # online large-cap proxy, not a CRSP sort
 }
 
 

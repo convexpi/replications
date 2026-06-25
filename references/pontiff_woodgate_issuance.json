@@ -1,0 +1,23 @@
+{
+  "name": "pontiff_woodgate_issuance",
+  "title": "Net share issuance",
+  "paper_title": "Share Issuance and Cross-Sectional Returns",
+  "paper_doi": "10.1111/j.1540-6261.2008.01362.x",
+  "pub_year": 2008,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1963-07-01",
+  "end": "2024-12-01",
+  "in_sample_sharpe": 0.451,
+  "oos_sharpe": 0.208,
+  "recent_sharpe": 0.154,
+  "oos_max_drawdown": -0.309,
+  "sharpe_decay": 0.54,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": "Univariate net-issuance sort (value-weighted quintiles). The effect is stronger with equal weighting and among small caps; gross of transaction costs.",
+  "online": false,
+  "verdict": "decayed",
+  "as_of": "2024-12-31"
+}

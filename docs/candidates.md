@@ -38,7 +38,7 @@ yet (e.g. point-in-time fundamentals) · `technique` a method demo, not a single
 | Accruals | Sloan (1996) | 10.2307/248290 | `done` | kenfrench (AC sort) |
 | Pairs trading (distance) | Gatev, Goetzmann & Rouwenhorst (2006) | 10.1093/rfs/hhj020 | `next` | yfinance |
 | Asset-class momentum | Asness, Moskowitz & Pedersen (2013) | 10.1111/jofi.12021 | `next` | yfinance ETFs |
-| Net stock issuance | Pontiff & Woodgate (2008) | 10.1111/j.1540-6261.2008.01362.x | `next` | kenfrench (NI sort) |
+| Net stock issuance | Pontiff & Woodgate (2008) | 10.1111/j.1540-6261.2008.01362.x | `done` | kenfrench (NI sort) |
 | Piotroski F-score | Piotroski (2000) | 10.2307/2672906 | `needs-data` | fundamentals |
 | Mohanram G-score | Mohanram (2005) | 10.1007/s11142-005-1535-3 | `needs-data` | fundamentals |
 | ML return forecasting (NB/GBM/CNN) | — | — | `technique` | — |

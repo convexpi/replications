@@ -1,4 +1,16 @@
 {
+  "ang_idiosyncratic_volatility": {
+    "osap_acronym": "IdioVol3F",
+    "correlation": 0.928,
+    "n_months": 738,
+    "quality": "clear"
+  },
+  "bali_cakici_whitelaw_max": {
+    "osap_acronym": null,
+    "correlation": null,
+    "n_months": 0,
+    "quality": "unverified"
+  },
   "cooper_gulen_schill_investment": {
     "osap_acronym": "AssetGrowth",
     "correlation": 0.376,
@@ -21,6 +33,12 @@
     "osap_acronym": "Size",
     "correlation": 0.631,
     "n_months": 1182,
+    "quality": "partial"
+  },
+  "frazzini_pedersen_bab": {
+    "osap_acronym": "BetaFP",
+    "correlation": -0.413,
+    "n_months": 702,
     "quality": "partial"
   },
   "jegadeesh_short_term_reversal": {
@@ -52,5 +70,17 @@
     "correlation": 0.464,
     "n_months": 738,
     "quality": "partial"
+  },
+  "pontiff_woodgate_issuance": {
+    "osap_acronym": "ShareIss1Y",
+    "correlation": 0.53,
+    "n_months": 738,
+    "quality": "partial"
+  },
+  "sloan_accruals": {
+    "osap_acronym": "Accruals",
+    "correlation": 0.304,
+    "n_months": 738,
+    "quality": "weak"
   }
 }
