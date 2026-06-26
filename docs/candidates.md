@@ -30,7 +30,8 @@ yet (e.g. point-in-time fundamentals) · `technique` a method demo, not a single
 | Time-series (trend) momentum | Moskowitz, Ooi & Pedersen (2012) | 10.1016/j.jfineco.2011.11.003 | `done` | yfinance futures |
 | Value (HML) | Fama & French (1993) | 10.1016/0304-405X(93)90023-5 | `done` | kenfrench |
 | Size (SMB) | Fama & French (1993) | 10.1016/0304-405X(93)90023-5 | `done` | kenfrench |
-| Profitability | Novy-Marx (2013) | 10.1016/j.jfineco.2013.01.003 | `done` | kenfrench |
+| Profitability (gross) | Novy-Marx (2013) | 10.1016/j.jfineco.2013.01.003 | `done` | kenfrench |
+| Operating profitability (RMW) | Fama & French (2015) | 10.1016/j.jfineco.2014.10.010 | `done` | kenfrench (OP sort) |
 | Investment / asset growth | Cooper, Gulen & Schill (2008) | 10.1111/j.1540-6261.2008.01370.x | `done` | kenfrench |
 | MAX effect (lottery stocks) | Bali, Cakici & Whitelaw (2011) | 10.1016/j.jfineco.2010.08.014 | `done` | yfinance |
 | Betting against beta | Frazzini & Pedersen (2014) | 10.1016/j.jfineco.2013.10.005 | `done` | kenfrench (BETA sort) |
@@ -41,6 +42,7 @@ yet (e.g. point-in-time fundamentals) · `technique` a method demo, not a single
 | Net stock issuance | Pontiff & Woodgate (2008) | 10.1111/j.1540-6261.2008.01362.x | `done` | kenfrench (NI sort) |
 | Earnings yield (P/E) | Basu (1977) | 10.1111/j.1540-6261.1977.tb01979.x | `done` | kenfrench (E-P sort) |
 | Cash-flow yield (value) | Lakonishok, Shleifer & Vishny (1994) | 10.1111/j.1540-6261.1994.tb04772.x | `done` | kenfrench (CF-P sort) |
+| Dividend yield (D/P) | Litzenberger & Ramaswamy (1979) | 10.1016/0304-405X(79)90012-6 | `done` | kenfrench (D-P sort) |
 | Piotroski F-score | Piotroski (2000) | 10.2307/2672906 | `needs-data` | fundamentals |
 | Mohanram G-score | Mohanram (2005) | 10.1007/s11142-005-1535-3 | `needs-data` | fundamentals |
 | ML return forecasting (NB/GBM/CNN) | — | — | `technique` | — |

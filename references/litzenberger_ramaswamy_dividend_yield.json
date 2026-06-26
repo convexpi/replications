@@ -1,0 +1,23 @@
+{
+  "name": "litzenberger_ramaswamy_dividend_yield",
+  "title": "Dividend yield (D/P effect)",
+  "paper_title": "The effect of personal taxes and dividends on capital asset prices: Theory and empirical evidence",
+  "paper_doi": "10.1016/0304-405X(79)90012-6",
+  "pub_year": 1979,
+  "authors": [
+    "ConvexPi"
+  ],
+  "start": "1927-07-01",
+  "end": "2024-12-01",
+  "in_sample_sharpe": 0.13,
+  "oos_sharpe": -0.015,
+  "recent_sharpe": -0.286,
+  "oos_max_drawdown": -0.599,
+  "sharpe_decay": 1.119,
+  "turnover": null,
+  "net_oos_sharpe": null,
+  "caveat": "Univariate dividend-yield sort (value-weighted quintiles); non-payers are excluded, so this is the premium among payers. Tax-driven and value-adjacent; the premium has largely faded in modern data. Gross of transaction costs.",
+  "online": false,
+  "verdict": "dormant",
+  "as_of": "2024-12-31"
+}
