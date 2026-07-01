@@ -5,6 +5,12 @@
     "n_months": 738,
     "quality": "clear"
   },
+  "asness_moskowitz_pedersen_asset_momentum": {
+    "osap_acronym": null,
+    "correlation": null,
+    "n_months": 0,
+    "quality": "unverified"
+  },
   "bali_cakici_whitelaw_max": {
     "osap_acronym": null,
     "correlation": null,
@@ -35,6 +41,12 @@
     "n_months": 882,
     "quality": "partial"
   },
+  "fama_french_op_profitability": {
+    "osap_acronym": null,
+    "correlation": null,
+    "n_months": 0,
+    "quality": "unverified"
+  },
   "fama_french_smb": {
     "osap_acronym": "Size",
     "correlation": 0.631,
@@ -46,6 +58,12 @@
     "correlation": -0.413,
     "n_months": 702,
     "quality": "partial"
+  },
+  "gatev_pairs_trading": {
+    "osap_acronym": null,
+    "correlation": null,
+    "n_months": 0,
+    "quality": "unverified"
   },
   "jegadeesh_short_term_reversal": {
     "osap_acronym": "STreversal",
@@ -64,6 +82,12 @@
     "correlation": 0.339,
     "n_months": 882,
     "quality": "weak"
+  },
+  "litzenberger_ramaswamy_dividend_yield": {
+    "osap_acronym": null,
+    "correlation": null,
+    "n_months": 0,
+    "quality": "unverified"
   },
   "moskowitz_grinblatt_industry_momentum": {
     "osap_acronym": "IndMom",

@@ -9,8 +9,8 @@ Regenerate with `python tools/gen_benchmark.py`. Verdicts are honest, not editor
 | Strategy | Paper | Pub. | IS Sharpe | OOS Sharpe | Decay | Verdict | OSAP |
 |---|---|---:|---:|---:|---:|---|---|
 | Idiosyncratic volatility puzzle [^1] | The Cross-Section of Volatility and Expected Returns | 2006 | 0.16 | 0.01 | 91% | dormant | clear (0.93) |
-| Asset-class momentum [^2] | Value and Momentum Everywhere | 2013 | 0.28 | 0.55 | improved | alive | — |
-| MAX effect (lottery stocks) [^3] | Maxing Out | 2011 | -0.11 | -0.29 | — | dormant | — |
+| Asset-class momentum [^2] | Value and Momentum Everywhere | 2013 | 0.28 | 0.56 | improved | alive | — |
+| MAX effect (lottery stocks) [^3] | Maxing Out | 2011 | -0.11 | -0.31 | — | dormant | — |
 | Earnings yield (P/E effect) [^4] | Investment Performance of Common Stocks in Relation to Their Price-Earnings Ratios | 1977 | 0.74 | 0.25 | 66% | dormant | partial (0.68) |
 | Investment (CMA) | Asset Growth and the Cross-Section of Stock Returns | 2008 | 0.71 | 0.03 | 95% | dormant | weak (0.38) |
 | Long-term reversal | Does the Stock Market Overreact? | 1985 | 0.20 | 0.07 | 66% | dormant | partial (0.67) |
@@ -18,13 +18,13 @@ Regenerate with `python tools/gen_benchmark.py`. Verdicts are honest, not editor
 | Operating profitability (RMW) [^5] | A five-factor asset pricing model | 2015 | 0.24 | 0.28 | improved | weak | — |
 | Size (SMB) | The Relationship Between Return and Market Value of Common Stocks | 1981 | 0.20 | -0.01 | 108% | dormant | partial (0.63) |
 | Betting against beta [^6] | Betting Against Beta | 2014 | 0.28 | 0.04 | 87% | dormant | partial (0.41) |
-| Pairs trading (distance) [^7] | Pairs Trading | 2006 | -0.05 | 0.06 | — | dormant | — |
+| Pairs trading (distance) [^7] | Pairs Trading | 2006 | -0.05 | 0.05 | — | dormant | — |
 | Short-term reversal [^8] | Evidence of Predictable Behavior of Security Returns | 1990 | 5.12 | 1.29 | 75% | decayed | partial (0.44) |
 | Momentum (WML) | Returns to Buying Winners and Selling Losers | 1993 | 0.63 | 0.38 | 40% | alive | clear (0.74) |
 | Cash-flow yield (value) [^9] | Contrarian Investment, Extrapolation, and Risk | 1994 | 0.58 | -0.06 | 110% | dormant | weak (0.34) |
 | Dividend yield (D/P effect) [^10] | The effect of personal taxes and dividends on capital asset prices | 1979 | 0.13 | -0.02 | 113% | dormant | — |
 | Industry momentum | Do Industries Explain Momentum? | 1999 | 0.47 | 0.31 | 35% | alive | partial (0.45) |
-| Trend (time-series momentum) [^11] | Time Series Momentum | 2012 | 0.34 | 0.42 | improved | alive | — |
+| Trend (time-series momentum) [^11] | Time Series Momentum | 2012 | 0.09 | 0.41 | improved | alive | — |
 | Profitability (RMW) | The Other Side of Value | 2013 | 0.58 | 0.24 | 59% | decayed | partial (0.46) |
 | Net share issuance [^12] | Share Issuance and Cross-Sectional Returns | 2008 | 0.45 | 0.03 | 94% | decayed | partial (0.53) |
 | Accruals anomaly [^13] | Do Stock Prices Fully Reflect Information in Accruals and Cash Flows about Future Earnings? | 1996 | 0.63 | 0.23 | 63% | decayed | weak (0.30) |
