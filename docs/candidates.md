@@ -35,6 +35,7 @@ yet (e.g. point-in-time fundamentals) · `technique` a method demo, not a single
 | Investment / asset growth | Cooper, Gulen & Schill (2008) | 10.1111/j.1540-6261.2008.01370.x | `done` | kenfrench |
 | MAX effect (lottery stocks) | Bali, Cakici & Whitelaw (2011) | 10.1016/j.jfineco.2010.08.014 | `done` | yfinance |
 | 52-week high momentum | George & Hwang (2004) | 10.1111/j.1540-6261.2004.00695.x | `done` | yfinance |
+| Illiquidity premium | Amihud (2002) | 10.1016/S1386-4181(01)00024-6 | `done` | yfinance |
 | Betting against beta | Frazzini & Pedersen (2014) | 10.1016/j.jfineco.2013.10.005 | `done` | kenfrench (BETA sort) |
 | Idiosyncratic volatility | Ang, Hodrick, Xing & Zhang (2006) | 10.1111/j.1540-6261.2006.00836.x | `done` | kenfrench (RESVAR sort) |
 | Accruals | Sloan (1996) | 10.2307/248290 | `done` | kenfrench (AC sort) |

@@ -49,3 +49,12 @@ def yfinance_prices(tickers: list[str] | str, start: str = "2005-01-01") -> pd.D
         tickers = tickers.split()
     px = yf.download(tickers, start=start, auto_adjust=True, progress=False)["Close"]
     return px
+
+
+def yfinance_dollar_volume(tickers: list[str] | str, start: str = "2005-01-01") -> pd.DataFrame:
+    """Daily dollar volume (adjusted close × share volume) for a list of tickers (online only)."""
+    import yfinance as yf
+    if isinstance(tickers, str):
+        tickers = tickers.split()
+    raw = yf.download(tickers, start=start, auto_adjust=True, progress=False)
+    return raw["Close"] * raw["Volume"]
