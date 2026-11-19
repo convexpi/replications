@@ -42,7 +42,12 @@ def long_short_from_signal(panel: pd.DataFrame, signal: pd.DataFrame, k: int,
         long_leg, short_leg = (hi, lo) if winners_high else (lo, hi)
         w.loc[dt, long_leg] = 1.0 / k
         w.loc[dt, short_leg] = -1.0 / k
-    w = w.shift(1)                                          # hold last rebalance's book (no look-ahead)
-    daily = panel.loc[panel.index >= w.dropna(how="all").index.min()]
-    strat = (daily * w.reindex(daily.index, method="ffill")).sum(axis=1)
-    return strat, w.dropna(how="all")
+    # A close-of-day signal is tradable on the NEXT trading session. Shift on the
+    # trading calendar, not the monthly signal index; also retain weekend/month-end
+    # signal dates while finding the most recent strictly earlier signal.
+    positions = w.index.searchsorted(panel.index, side="left") - 1
+    active = positions >= 0
+    daily = panel.loc[active]
+    held = pd.DataFrame(w.to_numpy()[positions[active]], index=daily.index, columns=w.columns)
+    strat = (daily * held).sum(axis=1)
+    return strat, w

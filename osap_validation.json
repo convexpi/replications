@@ -91,7 +91,7 @@
   },
   "moskowitz_grinblatt_industry_momentum": {
     "osap_acronym": "IndMom",
-    "correlation": 0.451,
+    "correlation": 0.49,
     "n_months": 1181,
     "quality": "partial"
   },

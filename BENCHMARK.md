@@ -25,7 +25,7 @@ Regenerate with `python tools/gen_benchmark.py`. Verdicts are honest, not editor
 | Momentum (WML) | Returns to Buying Winners and Selling Losers | 1993 | 0.62 | 0.35 | 44% | alive | clear (0.74) |
 | Cash-flow yield (value) [^11] | Contrarian Investment, Extrapolation, and Risk | 1994 | 0.58 | -0.05 | 109% | dormant | weak (0.34) |
 | Dividend yield (D/P effect) [^12] | The effect of personal taxes and dividends on capital asset prices | 1979 | 0.13 | -0.01 | 106% | dormant | — |
-| Industry momentum | Do Industries Explain Momentum? | 1999 | 0.47 | 0.33 | 31% | alive | partial (0.45) |
+| Industry momentum | Do Industries Explain Momentum? | 1999 | 0.47 | 0.37 | 22% | alive | partial (0.49) |
 | Trend (time-series momentum) [^13] | Time Series Momentum | 2012 | 0.09 | 0.46 | improved | alive | — |
 | Profitability (RMW) | The Other Side of Value | 2013 | 0.59 | 0.18 | 70% | decayed | partial (0.46) |
 | Net share issuance [^14] | Share Issuance and Cross-Sectional Returns | 2008 | 0.45 | 0.05 | 89% | decayed | partial (0.53) |
